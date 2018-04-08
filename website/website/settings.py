@@ -25,7 +25,8 @@ SECRET_KEY = 'y!s5prpboxbx_h@tg$emc_i4s2a1@fj3o$tpr1ihjmfbooo*^^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+#allowed hosts '*' <- all users [Delete after testing]
 
 
 # Application definition

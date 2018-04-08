@@ -3,7 +3,7 @@
   <ul>
     {% for user in all_users %}
       <li>
-        <a href="{% url 'user_videos' user.id %}"></a>
+        <a href="{% url 'user_videos' user.id %}">{{ user.name }}</a>
       </li>
     {% endfor %}
   </ul>

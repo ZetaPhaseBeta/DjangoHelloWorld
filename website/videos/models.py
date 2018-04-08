@@ -15,4 +15,4 @@ class Video(models.Model):
     url = models.CharField(max_length=500)
 
     def __str__(self):
-        return self.title + ' created by ' + self.author
+        return self.title + ' created by ' + self.author.username
