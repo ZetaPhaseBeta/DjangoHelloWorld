@@ -1,0 +1,12 @@
+<h1>List of All Users</h1>
+{% if all_users %}
+  <ul>
+    {% for user in all_users %}
+      <li>
+        <a href="{% url 'user_videos' user.id %}"></a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <h3>There are no existing users</h3>
+{% endif %}
